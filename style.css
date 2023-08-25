@@ -1,0 +1,113 @@
+html {
+  height: 100%;
+  width: 100%;
+
+  overflow: hidden;
+
+}
+
+
+.text{
+
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.title{
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 7vh;
+  
+}
+
+
+#the_final{
+
+  opacity: 0;
+
+  animation: the_final_animation 0s forwards;
+  animation-delay: 1.6s;
+  
+}
+
+@keyframes the_final_animation{
+		
+	0% { opacity: 0 }
+	100% { opacity: 1 }
+}
+
+#title_coming{
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+  
+}
+
+#brand_coming{
+
+  position: absolute;
+
+  top: 40%;
+  left: 50%;
+
+  width: 8vh;
+  height: 8vh;
+  
+  transform: translate(-50%, -50%);
+  
+}
+
+
+/* animations */
+
+#anim1{
+
+  position: absolute;
+  left: 100%;
+  top: 0%;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #444444;
+
+  animation: anim1_animation 1s;
+
+  animation-delay: 1s;
+  
+}
+
+@keyframes anim1_animation{
+		
+	0% { left: -100%; }
+	100% { left: 100%; }
+}
+
+#anim2{
+
+  position: absolute;
+  right: -150%;
+  top: -180%;
+
+  width: 180%;
+  height: 160%;
+
+  transform: rotate(45deg);
+
+  background-color: black;
+
+  animation: anim2_animation 1s;  
+
+  animation-delay: 1.3s;
+
+}
+
+@keyframes anim2_animation{
+		
+	0% { right: -150%; top: -180% }
+	100% { right: 100%; top: 100% }
+}
